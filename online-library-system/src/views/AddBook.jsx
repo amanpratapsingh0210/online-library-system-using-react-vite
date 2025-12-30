@@ -35,8 +35,8 @@ function AddBook() {
     }
 
     const newBook = { ...formData, id: Date.now(), rating: Number(formData.rating) };
-    dispatch(addBook(newBook)); // Add to Redux
-    navigate(`/books/${formData.category}`); // Redirect [cite: 24]
+    dispatch(addBook(newBook));
+    navigate(`/books/${formData.category}`);
   };
 
   return (
